@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Data Story</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+
+
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://datavizforall.org">DataVizForAll.org</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#story">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#data">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#credits">Credits</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-secondary text-white">
+    <div class="container text-center">
+      <h1>Hartford-Area Habitat for Humanity homes built in North Central Connecticut</h1>
+      <p class="lead">by Emma Willins and Myrian Ayala</p>
+      <p class="lead">Last updated on 12/06/2021</p>
+      <p class="lead">for Data Visualization for All</br>with Prof. Jack Dougherty</br>Trinity College, Hartford CT, USA</p><br>
+    </div>
+  </header>
+
+  <section id="story">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <br>
+          <p>Since 1989, <a href="https://hartfordhabitat.org/"> Hartford-Area Habitat for Humanity </a> has been building affordable homes in the city of Hartford and outlying areas. To provide context, this nonprofit housing organization was founded on the conviction that every man, woman and child should have a simple, durable place to live in dignity and safety. Therefore, volunteers build, repair and improve homes that low-income people can qualify for (Hartford-Area Habitat for Humanity, n.d). The term ‘outlying areas’ refers to the towns that are surrounded but does not include Hartford's city. One challenge the organization continually faces is finding land they can purchase and obtain permission to build affordable homes, since some suburban towns have resisted housing for low-income residents.</p>
+          <p> Corey Mackey, Tieasha Gayle and Rev. AJ Johnson, in representation of Hartford-Area Habitat for Humanity, shared with us that the organization has been working on expanding their reach beyond Hartford, providing their services outside of Connecticut’s capital. However, they do not necessarily have data nor visualization that can help them be on track on its current position toward achieving this goal. Therefore, as students we worked on answering the following question: Where has Hartford-Area Habitat for Humanity built homes in North Central Connecticut over time? To do so, we searched the houses’ year built/sold by habitat for each of the 249 addresses provided in the government official property records for the towns located in North Central Connecticut.
+          </p>
+          <p>Once we collected all the data in a spreadsheet, we made two charts. The first one provides a summary that speaks more directly to Habitat’s expansion in North Central Connecticut over the decade while the second chart showcases Habitat’s homes built in outlying areas organized by location and corresponding decade of construction so the reader can know where exactly Habitat has built more homes outside of the city. Finally, we created three interactive choropleth maps that provide much richer information since it allows any person, including for people who are not from Connecticut, to not only see where the towns are located in the map but also the estimated number of homes built in each town altogether. </p>
+          <p>The following column bar chart examines the percentages of where Habitat built homes by decade. Although we can observe that the majority of its homes were built in Hartford (light blue) throughout the decades, we can still see that there is an increasing percentage of homes constructed in outlying areas over the decade, which shows Habitat’s commitment toward broadening its work across the state. </p>
+          <br>
+          <iframe title="Over each decade, Habitat for Humanity has built an increasing percentage of its homes in outlying areas outside of the city of Hartford " aria-label="Stacked Column Chart" id="datawrapper-chart-1NvfH" src="https://datawrapper.dwcdn.net/1NvfH/10/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+
+          <p>Figure 1: Hartford-Area Habitat for humanity percentage of homes built by decade. Stacked column chart created with Datawrapper. Explore the <a href="https://datawrapper.dwcdn.net/1NvfH/11/">interactive version</a></p>
+
+          <p>Below you can find a table that provides the total numbers of homes built by Hartford-Area Habitat for Humanity for each decade which was used to create the percentage stacked column bar chart. </p>
+
+          <center><style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-lqy6{text-align:right;vertical-align:top}
+  .tg .tg-akbm{font-weight:bold;text-align:left;text-decoration:underline;vertical-align:top}
+  </style>
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-akbm">Location</th>
+      <th class="tg-1wig">Pre-2000</th>
+      <th class="tg-1wig">2000-2009</th>
+      <th class="tg-1wig">2010-present</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-1wig">Hartford city</td>
+      <td class="tg-lqy6">27</td>
+      <td class="tg-lqy6">90</td>
+      <td class="tg-lqy6">61</td>
+    </tr>
+    <tr>
+      <td class="tg-1wig">Outlying areas</td>
+      <td class="tg-lqy6">3</td>
+      <td class="tg-lqy6">35</td>
+      <td class="tg-lqy6">33</td>
+    </tr>
+    <tr>
+      <td class="tg-akbm">Total</td>
+      <td class="tg-lqy6">30</td>
+      <td class="tg-lqy6">125</td>
+      <td class="tg-lqy6">94</td>
+    </tr>
+  </tbody>
+  </table>
+
+<br>
+          <p>Table 1: Numbers of homes built by Hartford-Area Habitat for Humanity per decade. <a href="https://docs.google.com/spreadsheets/d/1afE8CD_XAwPYus-3bXJnoTGshckebVCjOiqI0lGFbt0/edit?usp=sharing" > See data source </a></p>
+
+</center>
+<p>Now, to see where exactly Hartford-Area Habitat for Humanity has built homes in outlying townsareas outside of Hartford, we decided to create a bar chart which visually illustrates the proportion of Habitat homes among all other the towns. Here the distinctions between outlying towns become clearer. New Britain stands out as the town that Habitat has done the most work in, which makes sense, given New Britain’s geographic proximity to Hartford. Additionally, New Britain has the largest population out of all the towns Habitat provided data for, excluding Hartford. It is reasonable that Habitat would pursue construction in larger towns given their work in more-population-dense areas such as Hartford.
+</p> <br>
+<iframe title="Hartford-Area Habitat for Humanity homes in outlying areas outside the city, CT by decade  " aria-label="Stacked Bars" id="datawrapper-chart-HBvRG" src="https://datawrapper.dwcdn.net/HBvRG/8/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="358"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+<p>Figure 2: Numbers of homes built by Hartford-Area Habitat for Humanity in outlying areas outside Hartford's city per decade. Stacked bar chart created with Datawrapper. Explore the <a href="https://datawrapper.dwcdn.net/HBvRG/8/" > interactive version </a></p>
+<p>For people who are not very familiar with Connecticut’s towns and their locations, we created three interactive choropleth maps that allow any person to see where habitat has built homes over time and the estimated number in each town. For the maps, we chose to use a continuous linear color legend. Hartford is represented by the darker blue while the other lighter blue colors are the towns where Habitat’s has expanded. To have a better understanding, the color is based on the amount of homes built, therefore, the darker it gets, the more homes were built in that particular town. This map was created using Map Shaper and it allowed us to combine Hartford and Tolland Counties which are located in North Central Connecticut and are where Habitat has been focusing on expanding in the last decades. This visualization helps us compare the maps, which allows us to appreciate how Hartford-Area Habitat for Humanity has been spreading in new towns over the decade. Lastly, the color gray in the maps represents the towns where homes have not yet been built by the organization.
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<p> <p style="text-align:left"> <iframe title="Pre-2000" aria-label="Map" id="datawrapper-chart-VAYal" src="https://datawrapper.dwcdn.net/VAYal/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 30% !important; border: none;" height="572"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+</script> <iframe title="2000-2009" aria-label="Map" id="datawrapper-chart-FT6S7" src="https://datawrapper.dwcdn.net/FT6S7/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 30% ; !important; border: none;" height="572"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+</script><iframe title=" 2010-present. " aria-label="Map" id="datawrapper-chart-0GdrN" src="https://datawrapper.dwcdn.net/0GdrN/5/" scrolling="no" frameborder="0" style="width: 0; min-width: 30% !important; border: none;" height="572"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script></p>
+
+
+
+  <!-- Data section-->
+  <section id="data" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Data</h2>
+          <p>
+To find the 'year built' and/or  'year sold' for the given homes, we searched into the town governments property records database provided by Professor Dougherty, and students Emma Wellins and Myrian Ayala which can be found below. </p>
+<p><a href="https://www.mytaxbill.org/inet/bill/home.do?town=bloomfield"> Hartford Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=bloomfield">Bloomfield Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=bristol">Bristol Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=easthartford">East Hartford Assessor Database</a><br>
+<a href="http://gis.vgsi.com/enfieldct/Search.aspx">Enfield Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=farmington">Farmington Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=glastonbury">lastonbury Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=granby">Granby CT Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=manchester">Manchester CT Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=manchester">New Britain Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=plainville">Plainville Assessor Database</a><br>
+<a href="https://www.suffieldct.gov/departments/tax">Suffield Assessor Database</a><br>
+<a href="https://www.vernon-ct.gov/departments-services/property-cards-and-gis-information">Vernon Assessor Database</a><br>
+<a href="https://www.mytaxbill.org/inet/bill/home.do?town=windsor">Windsor Assessor Database</a><br>
+</p>
+<p> We searched by property location, which allowed us to introduce the address number and the address street name. Then selected the right location and downloaded the pdf that provides the year built/sold. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Credits section-->
+  <section id="credits">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Credits</h2>
+          <p>Professor Dougherty collaborated to find the property records for each town located in North Central Connecticut and cleaned up the database along with Hartford-Area Habitat for Humanity to get a more accurate visualization. </p>
+<p>Nassar Abdelrahman and Nola McKenna who helped search the years of homes built/sold for the 249 data. </p>
+<p> Hands on DataVisualization book written by Professor Dourgherty and Independent Technologist Ilya Ilyankou: <a href="https://handsondataviz.org/"> https://HandsOnDataViz.org </a></p>
+<P> Datawrapper open-source tool to create interactive charts </p>
+<p> MIKE SWIFT Courant, Staff Writer. "Housing for Needy may be Built at Former Poor Farm in Simsbury." The Hartford Courant (1923-), Jun 03, 1989. <a href="https://www.proquest.com/docview/1638179800?accountid=14405"> http://ezproxy.trincoll.edu/login?url=https://www.proquest.com/historical-newspapers/housing-needy-may-be-built-at-former-poor-farm/docview/1638179800/se-2?accountid=14405 </a> </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="py-5 bg-secondary">
+  <div class="container">
+    <p class="m-0 text-center text-white">
+      Copyright &copy; by the author(s) 2021</br> Learn more at <a href="https://datavizforall.org">DataVizForAll.org</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+
+<script src="scrolling.js"></script>
+
+</html>
